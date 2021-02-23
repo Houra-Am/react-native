@@ -16,7 +16,7 @@ const myApp = () => {
       <View style={styles.txtContainer}>
         <Text style={[styles.smallWords, styles.big]}>Try editing me! 🎉</Text>
         <Text style={[styles.smallWords, styles.center]}>
-          Try editing me! 🎉
+          I hate react native 🎉
         </Text>
         <Text style={[styles.smallWords, styles.bold]}>Try editing me! 🎉</Text>
       </View>
