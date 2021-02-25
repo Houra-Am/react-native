@@ -1,5 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { FlatList, Text, View } from "react-native";
+import React from "react";
+import { useEffect, useState } from "react";
+
+import {
+  StyleSheet,
+  FlatList,
+  Text,
+  View,
+  Image,
+  Platform,
+} from "react-native";
 
 const List = () => {
   const [isLoading, setLoading] = useState(true);
@@ -14,7 +23,6 @@ const List = () => {
         console.log(data);
         setCountries(data);
       })
-
       .catch((error) => console.error(error))
       .finally(() => setLoading(false));
   }, []);
@@ -49,6 +57,12 @@ const List = () => {
               <View>
                 <Text>{"name: " + item.name}</Text>
                 <Text>{"capital: " + item.capital}</Text>
+                <View>
+                  <Image
+                    source={{ uri: item.flag }}
+                    style={{ width: 400, height: 400 }}
+                  />
+                </View>
               </View>
             )}
           />

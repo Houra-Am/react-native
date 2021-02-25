@@ -16,7 +16,7 @@ const App = () => {
     <ScrollView style={[styles.container]}>
       <List></List>
       <Pressable onPress={() => Alert.alert("I said don't press me!")}>
-        <Text>Don't press me!</Text>
+        <Text>Continue</Text>
       </Pressable>
       <ActivityIndicator size='small' color='#0000ff'></ActivityIndicator>
     </ScrollView>

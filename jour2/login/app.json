@@ -1,0 +1,17 @@
+{
+  "web": {
+    "build": {
+      "babel": {
+        "include": ["react-router-native"]
+      }
+    }
+  },
+  "name": "login",
+  "displayName": "login",
+  "expo": {
+    "name": "login",
+    "slug": "login",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"]
+  }
+}
